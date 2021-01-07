@@ -1,0 +1,133 @@
+/* Colores */
+$rojo-uno: #eb4d4b;
+$rojo-dos: #ff6b6b;
+$negro: #2f3640;
+$negro-dos: #2b2e33;
+$blanco-uno:#f5f6fa;
+$verde: #308a4e
+
+/*HOME*/
+nav a {
+    color: $rojo-uno;
+    &:hover {
+      color: $negro;
+      text-decoration: none;
+      font-weight:400;
+    }
+}
+
+.noSubrayado{
+  color: $rojo-uno;
+  text-decoration: none;
+  &:hover {
+    color: $rojo-dos;
+    text-decoration: none;
+  }
+}
+
+/*PROYECTOS*/
+.cardProyectos{
+  width:400px;
+  height:400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 8px 8px 20px #e6e6e6;
+  &:hover {
+    height: 450px;
+  width: 450px;
+  }
+}
+
+/*CONTACTO*/
+.boton{
+  border-radius: 5px;
+  width:190px;
+  height:8px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;   
+  background-color: $blanco-uno;
+  &:hover {
+    color: $blanco-uno;
+    background-color:  $negro-dos;
+    border: $negro-dos solid 1px;
+    width: 230px;
+  }
+}
+
+input{
+  margin:15px;
+  padding:20px;
+  width:200px;
+  height:10px;
+  border: #bdc3c7 solid 1px;
+  border-radius: 3px;
+  &:hover {
+    color: #ff6b6b;
+  }
+}
+
+section article{
+  a{
+    display:inline-block;
+    padding: 10px;
+  }
+  img{
+    display: inline-block;
+    padding: 40px;
+  }
+}
+
+/*FOOTER*/
+.footer {
+  background-color: $negro;
+  font-family: 'Montserrat', sans-serif;
+  .theFooter{
+    color:$rojo-dos
+  }
+  .theFooterDos{
+    color:$blanco-uno
+  }
+}
+
+/*OPERACIONES*/
+$ancho: 800px;
+$anchocard: 1000px;
+
+.cardproyectos{
+  background-color: $blanco-uno;
+  width: $ancho/2; /*ancho de 400px*/
+}
+
+.contenedor{
+  background-color: $blanco-uno;
+  width: $anchocard*2; /*ancho de 800px*/
+}
+
+.equipo{
+  background-color: $negro;
+  width: ($anchocard/2)-100;
+}
+
+$botón: enviar; /* Mi constante */
+
+.input {
+  color: $blanco-uno;
+  &:hover {
+    @if $boton == enviar {
+             color: $verde;
+    } @else if $boton == no enviar {
+                 color: $negro-dos;
+    }
+}
+
+@mixin carousel($ancho, $alto);
+  width: $ancho;
+  height: $alto; 
+}
+
+.body__div{
+  @include imagen(100%, 700)
+}

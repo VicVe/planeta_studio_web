@@ -1,0 +1,128 @@
+/* Colores */
+/*HOME*/
+nav a {
+  color: #eb4d4b;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: medium;
+  text-decoration: none;
+  /*padding-left: 180px;*/
+  border-bottom: none;
+}
+
+nav a:hover {
+  color: #2f3640;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.noSubrayado {
+  color: #eb4d4b;
+  text-decoration: none;
+}
+
+.noSubrayado:hover {
+  color: #ff6b6b;
+  text-decoration: none;
+}
+
+/*PROYECTOS*/
+.cardProyectos {
+  width: 400px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-shadow: 8px 8px 20px #e6e6e6;
+          box-shadow: 8px 8px 20px #e6e6e6;
+}
+
+.cardProyectos:hover {
+  height: 450px;
+  width: 450px;
+}
+
+/*CONTACTO*/
+.boton {
+  border-radius: 5px;
+  width: 190px;
+  height: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f5f6fa;
+}
+
+.boton:hover {
+  color: #f5f6fa;
+  background-color: #2b2e33;
+  border: #2b2e33 solid 1px;
+  width: 230px;
+}
+
+input {
+  margin: 15px;
+  padding: 20px;
+  width: 200px;
+  height: 10px;
+  border: #bdc3c7 solid 1px;
+  border-radius: 3px;
+}
+
+input:hover {
+  color: #ff6b6b;
+}
+
+section article a {
+  display: inline-block;
+  padding: 10px;
+}
+
+section article img {
+  display: inline-block;
+  padding: 40px;
+}
+
+/*FOOTER*/
+.footer__h3 {
+  background-color: #2f3640;
+}
+
+.footer__a {
+  background-color: #2b2e33;
+}
+
+/*OPERACIONES*/
+.cardproyectos {
+  background-color: #f5f6fa;
+  width: 400px;
+  /*ancho de 400px*/
+}
+
+.contenedor {
+  background-color: #f5f6fa;
+  width: 2000px;
+  /*ancho de 800px*/
+}
+
+.equipo {
+  background-color: #2f3640;
+  width: 400px;
+}
+/*# sourceMappingURL=prueba.css.map */

@@ -39,6 +39,7 @@ h1{
     padding-bottom:40px;
     padding-top: 40px;
 }
+
 p{
     color:#2f3640;
     font-family: 'Montserrat', sans-serif;
@@ -272,11 +273,14 @@ div div a:hover {
     text-decoration: none;
     font-weight:400;
 }
-
+.overflow{
+    overflow: scroll;
+}
 
 
 /*EQUIPO Y BIO*/
 .equipoFlex{
+    background-color: #2b2e33;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -322,7 +326,17 @@ div div a:hover {
     justify-content: center;
 }
 
-
+.flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
 
 /*CONTACTO*/
 .centrar{
@@ -385,38 +399,28 @@ input:hover{
 }
 
 /*FOOTER*/
+
 footer{
-    background-color: #2b2e33;
-    display:block;
-    margin: auto;
     width: 100%;
-    padding-bottom:40px;
-    padding-top: 40px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+    background-color: #2b2e33;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    padding: 80px 0 80px 0;
 }
-.theFooter{
+
+.txtFooter{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: larger;
+    font-size: x-large;
     color:#ff6b6b;
-    padding-top: 5px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center; 
 }
-.theFooterDos{
+
+.pieFooter{
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     font-size: medium;
     color:#f5f6fa;
-    padding-top: 5px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    /*padding-right: 100px;*/
 }
 .redes:hover{
     height: 55px;

@@ -293,7 +293,7 @@ section article img{
     justify-content:space-around;
 }
 .logofolio{
-    background-image: url("../images/logof.png");
+    background-image: url("../images/logofolio.png");
     flex-flow: column wrap;
     justify-content:space-around;
 }

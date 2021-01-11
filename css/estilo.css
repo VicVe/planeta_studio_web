@@ -40,6 +40,17 @@ h1{
     padding-top: 40px;
 }
 
+h2{
+    color:#2f3640;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    padding-right: 200px;
+    padding-left: 150px;
+    padding-bottom:40px;
+    padding-top: 40px;
+}
+
 p{
     color:#2f3640;
     font-family: 'Montserrat', sans-serif;
@@ -190,8 +201,34 @@ section article img{
     margin: 10px;
     flex-direction: column;
     justify-content: center;
+}
 
+/*MANIFIESTO HOME*/
+.manifiesto {
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;    
+}
+.manifiesto > div {
+        background-color: #ffffff;
+        width: 450px;
+        margin: 10px;
+        text-align: left;
+        line-height: 75px;
+        font-size: 30px;
+}
 
+.manifiesto h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.manifiesto p {
+    margin: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    padding:20px;
 }
 
 
@@ -243,7 +280,7 @@ section article img{
 }
 
 .janguer{
-    background-image: url("../images/janguer.png");
+    background-image: url("../images/janguer1.png");
     flex-flow: column wrap;
     justify-content:space-around;
     text-decoration: none;
@@ -251,12 +288,12 @@ section article img{
     color: #2b2e33;
 }
 .milo{
-    background-image: url("../images/milo.png");
+    background-image: url("../images/milo1.png");
     flex-flow: column wrap;
     justify-content:space-around;
 }
 .logofolio{
-    background-image: url("../images/logofolio.png");
+    background-image: url("../images/logof1.png");
     flex-flow: column wrap;
     justify-content:space-around;
 }
@@ -279,23 +316,40 @@ div div a:hover {
 
 
 /*EQUIPO Y BIO*/
-.equipoFlex{
-    background-color: #2b2e33;
-    padding: 20px;
+/*EQUIPO Y BIO*/
+.equipo {
+    margin: 0px;
     display: flex;
-    flex-wrap: wrap;
-    grid-row-gap: 20px;
-    background-color: #2b2e33;
-    height: 50%;
+    flex-wrap: wrap;   
 }
-.cardEquipo{
-    width: 50%;
-    height: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-}  
+.equipo > div {
+        background-color: #2b2e33;
+        width: 50%;
+        margin: 0px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+}
+
+.equipo h3 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.equipo p {
+    color: #ffffff;
+    margin: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    padding:30px;
+}
+
 .imagen{
     width: 250px;
     height: 250px;    
@@ -303,40 +357,10 @@ div div a:hover {
     flex-direction: column;
     justify-content: center;
 }
-.titulo{
-    color:#d1d1d1;
-    font-family:'Montserrat', sans-serif;
-    font-size:medium;
-    font-weight:600;
-    text-align: justify;    
-    padding-top: 20px;
-    flex-direction: column;
-    justify-content: center;   
-}
-.resumen{
-    height: 150px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color:#d1d1d1;
-    font-family:'Montserrat', sans-serif;
-    font-size:medium;
-    text-align: left;
-    margin:auto;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .flex-container {
     display: flex;
-    flex-direction: row;
-  }
-  
-  /* Responsive layout - makes a one column layout instead of a two-column layout */
-  @media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-    }
-  }
+    flex-wrap: wrap;
+}
 
 /*CONTACTO*/
 .centrar{
@@ -396,6 +420,7 @@ input:hover{
 .logo0{
     display:block;
     margin:auto;
+    padding-bottom: 20px;
 }
 
 /*FOOTER*/
@@ -406,7 +431,7 @@ footer{
     grid-column-start: 1;
     grid-column-end: 4;
     text-align: center;
-    padding: 80px 0 80px 0;
+    padding: 50px 0 50px 0;
 }
 
 .txtFooter{
@@ -449,4 +474,60 @@ footer span{
     transform: translate(23px, 36px);
     padding-right: 25px;
 
+}
+
+@media (max-width: 800px) {
+    nav{
+        flex-direction: column;
+    }
+    
+    span{
+        font-size: 15px;
+
+    }
+        
+    h1 {
+        font-size: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom:30px;
+        padding-top: 40px;
+    }
+
+    h2{
+        font-size: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom:30px;
+        padding-top: 40px;
+        text-align: left;
+        
+    }
+
+    p{
+        font-size: 16px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom:40px;
+        padding-top: 40px;
+
+    }
+    a{
+        font-size: 16px;
+
+    }
+    
+    section{
+        flex-direction: column;
+    }
+
+    .equipo > div {
+        background-color: #2b2e33;
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        align-items: center;
+    }
 }

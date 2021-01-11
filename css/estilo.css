@@ -280,7 +280,7 @@ section article img{
 }
 
 .janguer{
-    background-image: url("../images/janguer1.png");
+    background-image: url("../images/janguer.png");
     flex-flow: column wrap;
     justify-content:space-around;
     text-decoration: none;
@@ -288,12 +288,12 @@ section article img{
     color: #2b2e33;
 }
 .milo{
-    background-image: url("../images/milo1.png");
+    background-image: url("../images/milo.png");
     flex-flow: column wrap;
     justify-content:space-around;
 }
 .logofolio{
-    background-image: url("../images/logof1.png");
+    background-image: url("../images/logof.png");
     flex-flow: column wrap;
     justify-content:space-around;
 }

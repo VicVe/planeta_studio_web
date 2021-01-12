@@ -5,30 +5,29 @@ font-size: 62,5%;
     margin:0px;
     padding:0px;
 }
-/* ETIQUETAS PRINCIPALES*/
-nav a{
+
+/* NAV */
+.Nav {
     color:#eb4d4b;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: medium;
+    text-decoration: none; 
+    border-bottom:none;
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+}
+
+li a:hover {
+    color:#2f3640;
+    background:transparent;
     text-decoration: none;
-    /*padding-left: 180px;*/    
-    border-bottom:none; 
 }
-nav a:hover{
-    color: #2f3640;
-    text-decoration: none;
-    font-weight:400;
-}
-.navbar{
-    height: 100px;
-    padding-top: 50;
-    
-    display: flex;
-    flex-flow: wrap;
-    justify-content: flex-start;
-    justify-content: space-evenly;
-}
+
+/* TEXTOS */
 h1{
     color:#2f3640;
     font-family: 'Montserrat', sans-serif;
@@ -51,6 +50,15 @@ h2{
     padding-top: 40px;
 }
 
+h3{
+    color:#2f3640;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: left;
+    
+}
+
 p{
     color:#2f3640;
     font-family: 'Montserrat', sans-serif;
@@ -62,32 +70,7 @@ p{
     padding-bottom:40px;
     padding-top: 40px;
 }
-/*ul li{
-    color:#eb4d4b;
-    font-family:'Montserrat', sans-serif;
-    list-style-position: inside;
-    list-style-type: none;
-    text-align: center;
-}*/
-div ul li{
-    display:inline-block;
-    color:#2f3640;
-    list-style-position: inside;
-    list-style-type: none;
-    padding:20px;
-    margin:30px;
-}
-section article a{
-    display:inline-block;
-    padding: 10px;
-}
-section article img{
-    display: inline-block;
-    padding: 40px;
-}
 
-
-/*TIPOGRAFIA - TEXTOS*/
 .subtitulo{
     color:#2f3640;
     padding-right: 200px;
@@ -173,6 +156,16 @@ section article img{
 .bold{
     font-weight:bold;
 }
+
+/* section article a{
+    display:inline-block;
+    padding: 10px;
+}
+section article img{
+    display: inline-block;
+    padding: 40px;
+} */
+
 
 /*HOME*/
 .centrarGrilla{
@@ -304,6 +297,10 @@ div div a{
     font-size: medium;
     text-decoration: none;
 }
+
+.pointer {
+    cursor: pointer;
+}  
     
 div div a:hover {
     color: #2f3640;
@@ -314,8 +311,6 @@ div div a:hover {
     overflow: scroll;
 }
 
-
-/*EQUIPO Y BIO*/
 /*EQUIPO Y BIO*/
 .equipo {
     margin: 0px;
@@ -382,9 +377,6 @@ div div a:hover {
    justify-content: center;
 }
 form{
-    /*background-color: rgb(226, 226, 226); /*esto es para ver el ancho de la caja
-    margin:20px;
-    padding:10px;*/
     width: 300px; /*ancho de la caja*/
     height: 600px;
     display:flex;
@@ -437,7 +429,7 @@ footer{
 .txtFooter{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: x-large;
+    font-size: xx-large;
     color:#ff6b6b;
 }
 
@@ -452,7 +444,7 @@ footer{
     width: 55px;
 }
 
-/* ESTILOS SUELTOS*/
+/*ESTILOS SUELTOS*/
 span{
     font-weight:bold;
     color:#2f3640;      
@@ -475,7 +467,7 @@ footer span{
     padding-right: 25px;
 
 }
-
+/*RESPONSIVE*/
 @media (max-width: 800px) {
     nav{
         flex-direction: column;
@@ -500,7 +492,12 @@ footer span{
         padding-left: 20px;
         padding-bottom:30px;
         padding-top: 40px;
+        text-align: left;        
+    }
+
+    h3{
         text-align: left;
+        font-size: 15px;
         
     }
 
@@ -514,7 +511,6 @@ footer span{
     }
     a{
         font-size: 16px;
-
     }
     
     section{

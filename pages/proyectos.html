@@ -11,33 +11,52 @@
         <title>Proyectos | Planeta Studio</title>
     </head>
     <body>
-        <header class="col-12-sm col-12-md col-12-lg">
-            <nav class="navbar col-12">
-                <a class="navbar-brand" href="../index.html">
+        <header>
+            <nav class="Nav navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand">
                     <img src="../images/planeta2.jpg" width="40" height="30" class="d-inline-block align-top" alt="" loading="lazy">
                     <span>PlanetaStudio.</span>
-                </a>                  
-                <a href="../index.html">Home</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="proyectos.html">Proyectos</a>
-                <a href="bio.html">Bio</a>
-                <a href="contacto.html">Contacto</a>
+                </a>                
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="Nav" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="Nav" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="Nav" href="proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="Nav" href="bio.html">Bio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="Nav" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
+        
         <h1> Proyectos </h1>
         <p>Estos son algunos de nuestros proyectos y casos de estudio desarrollados hasta el momento. <br>En nuestro portfolio de <a class="noSubrayado" href="http://www.behance.net/vicsch"  target="_blank">Behance</a> podés mirar muchos más.</p>
         <div class="proyectosFlex overflow">
-            <div class="cardProyectos janguer">
+            <div class="cardProyectos janguer pointer">
                 <a href="https://www.behance.net/gallery/108776793/Janguer-Web-UXUI" target="_blank">
                     <h2 class="typeProyectos">Janguer<br>Ux/ui</h2>
                 </a>                
             </div>
-            <div class="cardProyectos milo">
+            <div class="cardProyectos milo pointer">
                 <a href="https://www.behance.net/gallery/100617497/Milo-app-UXUI" target="_blank">
                     <h2 class="typeProyectos">Milo<br>Ux/ui</h2>
                 </a>
             </div>
-            <div class="cardProyectos logofolio">
+            <div class="cardProyectos logofolio pointer">
                 <a href="https://www.behance.net/gallery/92026471/Logofolio-I" target="_blank">
                     <h2 class="typeProyectos">Logofolio<br>Identidad</h2>
                 </a>
@@ -45,7 +64,7 @@
         </div>
         
         <footer>
-            <p class="txtFooter">Hagamos contacto!</p>
+            <p class="txtFooter">Construyamos algo grande.<br>¡Hagamos contacto!</p>
             <a href="mailto:elplanetadevic@gmail.com" target="_blank">
                 <img class="redes" src="../images/bmail.png" alt="mail" width="40" title="Gmail"/>
             </a>

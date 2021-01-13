@@ -55,8 +55,7 @@ h3{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 2rem;
-    text-align: left;
-    
+    text-align: left;    
 }
 
 p{
@@ -71,16 +70,6 @@ p{
     padding-top: 40px;
 }
 
-.subtitulo{
-    color:#2f3640;
-    padding-right: 200px;
-    padding-left: 150px;
-    padding-bottom:40px;
-    padding-top: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-}
 .maniFiesto{
     font-family:'Montserrat', sans-serif;
     font-size: larger;
@@ -89,37 +78,28 @@ p{
     text-align: center;
 }
 
-.noSubrayado{
+.link{
     color:#eb4d4b;
     text-decoration: none;
 }
-.noSubrayado:hover{
+.link:hover{
     color: #ff6b6b;
     text-decoration: none;
 }
 
-.noSubrayado2{
-    color:#eb4d4b;
-    text-decoration: none;
-    font-size: 19px;
-}
-.noSubrayado2:hover{
-    color: #ff6b6b;
-    text-decoration: none;
-}
 .negro{
     color:#2f3640;
 }
-.type{
+/* .type{
     font-family:'Montserrat', sans-serif;
     font-size: medium;
     font-weight: 300;
-}
+} */
 .centrar{
     font-family:'Montserrat', sans-serif;
     text-align:center;
 }
-.type600{
+/* .type600{
     font-family:'Montserrat', sans-serif;
     font-size:medium;
     font-weight:600;
@@ -130,29 +110,8 @@ p{
     font-weight:400;
     padding-left: 100px;
     padding-bottom:20px;
-}
-.typeFormulario{
-    font-family:'Montserrat', sans-serif;
-    font-size: medium;
-    font-weight:400;
-}
-.textoArea{
-    font-family:'Montserrat', sans-serif;
-    font-size: small;
-    font-weight:300;
-    text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top:18px;
-}
-.typeProyectos{
-    font-family:'Montserrat', sans-serif;
-    font-size: 30px;
-    font-weight:600;
-    text-align: center;
-    padding-left: 20px;
-    padding-bottom:20px;
-}
+} */
+
 .bold{
     font-weight:bold;
 }
@@ -167,7 +126,7 @@ section article img{
 } */
 
 
-/*HOME*/
+/* Home */
 .centrarGrilla{
     display: flex;
     flex-direction: column;
@@ -196,36 +155,36 @@ section article img{
     justify-content: center;
 }
 
-/*MANIFIESTO HOME*/
-.manifiesto {
-    margin: 0px;
-    display: flex;
-    flex-wrap: wrap;    
-}
-.manifiesto > div {
-        background-color: #ffffff;
-        width: 450px;
-        margin: 10px;
-        text-align: left;
-        line-height: 75px;
-        font-size: 30px;
-}
+/*---------------- Manifiesto */
+                .manifiesto {
+                    margin: 0px;
+                    display: flex;
+                    flex-wrap: wrap;    
+                }
+                .manifiesto > div {
+                        background-color: #ffffff;
+                        width: 450px;
+                        margin: 10px;
+                        text-align: left;
+                        line-height: 75px;
+                        font-size: 30px;
+                }
 
-.manifiesto h3 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 25px;
-}
+                .manifiesto h3 {
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 25px;
+                }
 
-.manifiesto p {
-    margin: 10px;
-    font-weight: 400;
-    font-size: 18px;
-    padding:20px;
-}
+                .manifiesto p {
+                    margin: 10px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    padding:20px;
+                }
 
 
-/*SERVICIOS*/
+/* Servicios */
 .serviciosFlex{
     padding: 40px;
     display: flex;
@@ -250,7 +209,16 @@ section article img{
 }
 
 
-/*PROYECTOS*/
+/* Proyectos */
+.typeProyectos{
+    font-family:'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight:600;
+    text-align: center;
+    padding-left: 20px;
+    padding-bottom:20px;
+}
+
 .proyectosFlex{
     padding: 20px;
     display: flex;
@@ -276,9 +244,6 @@ section article img{
     background-image: url("../images/janguer.png");
     flex-flow: column wrap;
     justify-content:space-around;
-    text-decoration: none;
-    font-size: medium;
-    color: #2b2e33;
 }
 .milo{
     background-image: url("../images/milo.png");
@@ -298,20 +263,26 @@ div div a{
     text-decoration: none;
 }
 
-.pointer {
-    cursor: pointer;
-}  
-    
 div div a:hover {
     color: #2f3640;
     text-decoration: none;
     font-weight:400;
 }
+
+.pointer {
+    cursor: pointer;
+}  
+    
 .overflow{
     overflow: scroll;
 }
 
-/*EQUIPO Y BIO*/
+/* Equipo & bio */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .equipo {
     margin: 0px;
     display: flex;
@@ -352,12 +323,8 @@ div div a:hover {
     flex-direction: column;
     justify-content: center;
 }
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-/*CONTACTO*/
+/* Contacto */
 .centrar{
     display: flex;
     flex-direction: column;
@@ -415,8 +382,22 @@ input:hover{
     padding-bottom: 20px;
 }
 
-/*FOOTER*/
+.typeFormulario{
+    font-family:'Montserrat', sans-serif;
+    font-size: medium;
+    font-weight:400;
+}
+.textoArea{
+    font-family:'Montserrat', sans-serif;
+    font-size: small;
+    font-weight:300;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:18px;
+}
 
+/* Footer */
 footer{
     width: 100%;
     background-color: #2b2e33;
@@ -445,18 +426,16 @@ footer{
 }
 
 /*ESTILOS SUELTOS*/
-span{
+/* span{
     font-weight:bold;
     color:#2f3640;      
-}
+} */
 
 footer span{
     font-weight:bold;
     color:#f5f6fa;
 }
-.fondoMuestra{
-    background-color: bisque;
-}
+
 .padd{
     padding-left: 100px;
     padding-top: 20px;
@@ -465,9 +444,9 @@ footer span{
 .planeta{
     transform: translate(23px, 36px);
     padding-right: 25px;
-
 }
-/*RESPONSIVE*/
+
+/* Responsive */
 @media (max-width: 800px) {
     nav{
         flex-direction: column;

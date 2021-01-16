@@ -6,10 +6,13 @@ font-size: 62,5%;
     padding:0px;
 }
 
-/* NAV */
+body{
+    font-family: 'Montserrat', sans-serif;
+} 
+
+/* Navbar */
 .Nav {
     color:#eb4d4b;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: medium;
     text-decoration: none; 
@@ -18,7 +21,7 @@ font-size: 62,5%;
     z-index: 100;
     text-align: center;
     padding: 20px;
-    margin: 20px 20px 20px 20px;
+    margin: 30px;
 }
 
 li a:hover {
@@ -27,10 +30,10 @@ li a:hover {
     text-decoration: none;
 }
 
-/* TEXTOS */
+
+/* Tipografía gral */
 h1{
     color:#2f3640;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 3rem;
     padding-right: 200px;
@@ -41,7 +44,6 @@ h1{
 
 h2{
     color:#2f3640;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 2rem;
     padding-right: 200px;
@@ -52,7 +54,6 @@ h2{
 
 h3{
     color:#2f3640;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 2rem;
     text-align: left;    
@@ -60,7 +61,6 @@ h3{
 
 p{
     color:#2f3640;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 19px;
     line-height: 1.6;
@@ -71,7 +71,6 @@ p{
 }
 
 .maniFiesto{
-    font-family:'Montserrat', sans-serif;
     font-size: larger;
     font-weight:600;
     color:#eb4d4b;
@@ -87,43 +86,9 @@ p{
     text-decoration: none;
 }
 
-.negro{
-    color:#2f3640;
-}
-/* .type{
-    font-family:'Montserrat', sans-serif;
-    font-size: medium;
-    font-weight: 300;
-} */
 .centrar{
-    font-family:'Montserrat', sans-serif;
     text-align:center;
 }
-/* .type600{
-    font-family:'Montserrat', sans-serif;
-    font-size:medium;
-    font-weight:600;
-}
-.type400{
-    font-family:'Montserrat', sans-serif;
-    font-size: medium;
-    font-weight:400;
-    padding-left: 100px;
-    padding-bottom:20px;
-} */
-
-.bold{
-    font-weight:bold;
-}
-
-/* section article a{
-    display:inline-block;
-    padding: 10px;
-}
-section article img{
-    display: inline-block;
-    padding: 40px;
-} */
 
 
 /* Home */
@@ -157,6 +122,7 @@ section article img{
 
 /*---------------- Manifiesto */
                 .manifiesto {
+                    padding: 10px;
                     margin: 0px;
                     display: flex;
                     flex-wrap: wrap;    
@@ -173,7 +139,7 @@ section article img{
                 .manifiesto h3 {
                     text-align: center;
                     font-weight: 600;
-                    font-size: 25px;
+                    font-size: 20px;
                 }
 
                 .manifiesto p {
@@ -200,23 +166,20 @@ section article img{
 }
 .servicios{
     color:#2f3640;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: medium;
     padding-top: 15px;
-   /*text-align: center;*/
     text-decoration: none;
 }
 
-
 /* Proyectos */
 .typeProyectos{
-    font-family:'Montserrat', sans-serif;
     font-size: 30px;
     font-weight:600;
     text-align: center;
     padding-left: 20px;
     padding-bottom:20px;
+    text-decoration: none;
 }
 
 .proyectosFlex{
@@ -225,48 +188,32 @@ section article img{
     flex-flow: wrap;
     justify-content: space-evenly;
     grid-row-gap: 20px;
-    height: 500px;
+    height: 400px;
 }
 .cardProyectos{
     width:400px;
-    height:400px;
+    height:350px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     box-shadow: 8px 8px 20px #e6e6e6;
 }
 .cardProyectos:hover{
-    height: 450px;
-    width: 450px;
+    opacity: 50%;
+    transition: .5s ease;   
 }
 
 .janguer{
-    background-image: url("../images/janguer.png");
     flex-flow: column wrap;
     justify-content:space-around;
 }
 .milo{
-    background-image: url("../images/milo.png");
     flex-flow: column wrap;
     justify-content:space-around;
 }
 .logofolio{
-    background-image: url("../images/logofolio.png");
     flex-flow: column wrap;
     justify-content:space-around;
-}
-div div a{   
-    color: #2b2e33;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: medium;
-    text-decoration: none;
-}
-
-div div a:hover {
-    color: #2f3640;
-    text-decoration: none;
-    font-weight:400;
 }
 
 .pointer {
@@ -277,52 +224,58 @@ div div a:hover {
     overflow: scroll;
 }
 
-/* Equipo & bio */
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-}
+/* Bio */
+/*---------------- Equipo */
+                    .flex-container {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
 
-.equipo {
-    margin: 0px;
-    display: flex;
-    flex-wrap: wrap;   
-}
-.equipo > div {
-        background-color: #2b2e33;
-        width: 50%;
-        margin: 0px;
-        text-align: center;
-        line-height: 75px;
-        font-size: 30px;
-        align-items: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-}
+                    .equipo {
+                        margin: 0px;
+                        display: flex;
+                        flex-wrap: wrap;   
+                    }
+                    .equipo > div {
+                            background-color: #2b2e33;
+                            width: 50%;
+                            margin: 0px;
+                            text-align: center;
+                            line-height: 75px;
+                            font-size: 30px;
+                            align-items: center;
+                            padding-top: 20px;
+                            padding-bottom: 20px;
+                    }
 
-.equipo h3 {
-    color: #ffffff;
-    text-align: center;
-    font-weight: 600;
-    font-size: 18px;
-    padding-top: 20px;
-}
+                    .equipo h3 {
+                        color: #ffffff;
+                        text-align: center;
+                        font-weight: 600;
+                        font-size: 18px;
+                        padding-top: 20px;
+                    }
 
-.equipo p {
-    color: #ffffff;
-    margin: 10px;
-    font-weight: 400;
-    font-size: 18px;
-    padding:30px;
-}
+                    .equipo p {
+                        color: #ffffff;
+                        margin: 10px;
+                        font-weight: 400;
+                        font-size: 18px;
+                        padding:30px;
+                    }
 
-.imagen{
-    width: 250px;
-    height: 250px;    
-    margin:auto;
-    flex-direction: column;
-    justify-content: center;
-}
+                    .imagen{
+                        width: 250px;
+                        height: 250px;    
+                        margin:auto;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+
+                    .imagen:hover{
+                        opacity: 50%;
+                        transition: .5s ease;        
+                    }
 
 /* Contacto */
 .centrar{
@@ -344,7 +297,7 @@ div div a:hover {
    justify-content: center;
 }
 form{
-    width: 300px; /*ancho de la caja*/
+    width: 300px;
     height: 600px;
     display:flex;
     flex-flow: column; 
@@ -362,7 +315,6 @@ input:hover{
     color: #ff6b6b;
 }
 .boton{
-    font-family: 'Montserrat', sans-serif;
     font-size: medium;
     margin: 10px;
     display:flex;
@@ -379,16 +331,14 @@ input:hover{
 .logo0{
     display:block;
     margin:auto;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .typeFormulario{
-    font-family:'Montserrat', sans-serif;
     font-size: medium;
     font-weight:400;
 }
 .textoArea{
-    font-family:'Montserrat', sans-serif;
     font-size: small;
     font-weight:300;
     text-align: left;
@@ -408,34 +358,37 @@ footer{
 }
 
 .txtFooter{
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: xx-large;
     color:#ff6b6b;
 }
 
 .pieFooter{
-    font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     font-size: medium;
     color:#f5f6fa;
-}
-.redes:hover{
-    height: 55px;
-    width: 55px;
+    padding-top: 20px;
 }
 
-/*ESTILOS SUELTOS*/
-/* span{
-    font-weight:bold;
-    color:#2f3640;      
-} */
-
-footer span{
+.pieFooter span{
     font-weight:bold;
     color:#f5f6fa;
 }
 
+.reDes{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    /* grid-row-gap: 15px; */
+    padding-bottom: 20px;
+}
+
+.redes:hover{
+    height: 60px;
+    width: 60px;
+}
+
+/* Estilos varios */
 .padd{
     padding-left: 100px;
     padding-top: 20px;
@@ -446,10 +399,14 @@ footer span{
     padding-right: 25px;
 }
 
+
 /* Responsive */
 @media (max-width: 800px) {
     nav{
         flex-direction: column;
+        
+        padding: 0px;
+        margin: 0px;
     }
     
     span{
@@ -466,9 +423,9 @@ footer span{
     }
 
     h2{
-        font-size: 20px;
+        font-size: 25px;
         padding-right: 20px;
-        padding-left: 20px;
+        padding-left: 30px;
         padding-bottom:30px;
         padding-top: 40px;
         text-align: left;        
@@ -476,7 +433,7 @@ footer span{
 
     h3{
         text-align: left;
-        font-size: 15px;
+        font-size:18px;
         
     }
 

@@ -147,7 +147,7 @@ p{
                 
                 .item:hover{
                     width: 400px;
-                    background-color:#e43f3c;
+                    background-color:#ff4949;
                     padding-top:20px;
                     margin: 20px;
                     color: #e6e6e6;
@@ -211,27 +211,11 @@ p{
     flex-flow: column wrap;
     justify-content:space-around;
 }
-/* .janguer{
-    flex-flow: column wrap;
-    justify-content:space-around;
-}
-.milo{
-    flex-flow: column wrap;
-    justify-content:space-around;
-}
-.logofolio{
-    flex-flow: column wrap;
-    justify-content:space-around;
-} */
-
 
 .pointer {
     cursor: pointer;
 }  
-    
-/* .overflow{
-    overflow: scroll;
-} */
+
 
 /* Bio */
 /*---------------- Equipo */
@@ -246,7 +230,7 @@ p{
                         flex-wrap: wrap;   
                     }
                     .equipo > div {
-                            background-color: #2b2e33;
+                            background-color: #161718;
                             width: 50%;
                             margin: 0px;
                             text-align: center;
@@ -357,9 +341,10 @@ input:hover{
 }
 
 /* Footer */
+
 footer{
     width: 100%;
-    background-color: #2b2e33;
+    background-color: #161718;
     grid-column-start: 1;
     grid-column-end: 4;
     text-align: center;
@@ -368,8 +353,8 @@ footer{
 
 .txtFooter{
     font-weight: 600;
-    font-size: xx-large;
-    color:#ff6b6b;
+    font-size: 28px;
+    color:#ff4949;
 }
 
 .pieFooter{

@@ -11,25 +11,25 @@ body{
 } 
 
 /* Navbar */
-.Nav {
+.brand-position{
+    padding-left:130px;
+}
+.sombra{
+    background-color: #ffffff;    
+    box-shadow: 8px 8px 20px #ebebeb;
+}
+ul li a{
+    height: 100px;
     color:#eb4d4b;
-    font-weight: 400;
-    font-size: medium;
-    text-decoration: none; 
-    border-bottom:none;
-    position: relative;
-    z-index: 100;
-    text-align: center;
-    padding: 20px;
-    margin: 30px;
+    text-decoration: none;
+    margin: 40px;
 }
 
-li a:hover {
+ul li a:hover{
     color:#2f3640;
     background:transparent;
-    text-decoration: none;
+    text-decoration: none;    
 }
-
 
 /* Tipografía gral */
 h1{
@@ -68,13 +68,6 @@ p{
     padding-left: 150px;
     padding-bottom:40px;
     padding-top: 40px;
-}
-
-.maniFiesto{
-    font-size: larger;
-    font-weight:600;
-    color:#eb4d4b;
-    text-align: center;
 }
 
 .link{
@@ -122,10 +115,12 @@ p{
 
 /*---------------- Manifiesto */
                 .manifiesto {
+                    height: 350px;
                     padding: 10px;
                     margin: 0px;
                     display: flex;
-                    flex-wrap: wrap;    
+                    flex-wrap: wrap;
+                    cursor: pointer;    
                 }
                 .manifiesto > div {
                         background-color: #ffffff;
@@ -147,6 +142,15 @@ p{
                     font-weight: 400;
                     font-size: 18px;
                     padding:20px;
+                }
+
+                
+                .item:hover{
+                    width: 400px;
+                    background-color:#e43f3c;
+                    padding-top:20px;
+                    margin: 20px;
+                    color: #e6e6e6;
                 }
 
 
@@ -187,8 +191,8 @@ p{
     display: flex;
     flex-flow: wrap;
     justify-content: space-evenly;
-    grid-row-gap: 20px;
-    height: 400px;
+    grid-row-gap: 10px;
+    height: 800px;
 }
 .cardProyectos{
     width:400px;
@@ -203,7 +207,11 @@ p{
     transition: .5s ease;   
 }
 
-.janguer{
+.itemProyecto{
+    flex-flow: column wrap;
+    justify-content:space-around;
+}
+/* .janguer{
     flex-flow: column wrap;
     justify-content:space-around;
 }
@@ -214,15 +222,16 @@ p{
 .logofolio{
     flex-flow: column wrap;
     justify-content:space-around;
-}
+} */
+
 
 .pointer {
     cursor: pointer;
 }  
     
-.overflow{
+/* .overflow{
     overflow: scroll;
-}
+} */
 
 /* Bio */
 /*---------------- Equipo */
@@ -402,13 +411,10 @@ footer{
 
 /* Responsive */
 @media (max-width: 800px) {
-    nav{
-        flex-direction: column;
-        
-        padding: 0px;
-        margin: 0px;
+    .brand-position{
+        padding-left:2px;
     }
-    
+
     span{
         font-size: 15px;
 
@@ -451,6 +457,15 @@ footer{
     
     section{
         flex-direction: column;
+    }
+
+    .manifiesto{
+        height: 1050px;
+
+    }
+
+    .proyectosFlex{
+        height: 2300px;
     }
 
     .equipo > div {
